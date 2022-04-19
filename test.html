@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="data.json" type="text/javascript"></script>
+    <script>
+      let mydata = JSON.parse(JSON.stringify(data));
+      //document.write(mydata.members[0]);
+      Object.keys(data); // key값만 뽑아냄
+      mydata['squadName']; // key값으로 value값 뽑아내기
+      //https://zincod.tistory.com/136
+      mydata['members'][0]; // {name: 'Molecule Man', age: 29, secretIdentity: 'Dan Jukes', powers: Array(3)}
+      mydata['members'][0]['name']; //'Molecule Man'
+      mydata['members'][0]['powers'][0]; //'Radiation resistance' -> 구석까지 훑는 코드
+
+      // 재민이는 벗겨야 한다고 한다. 일단 제일 겉에 있는 json 꺾쇠부터 벗겨보란다.
+      // 배열에 담겨 있으니 배열도 벗겨야 한다.
+
+      const jm = data.members; // 큰 데이터에서는 json의 일부를 따로 변수 선언해서 입력하면 편안함. 안락함. 변수에 안넣고 데이터가 더 크면 반복문 통해서 ...
+     
+      document.write(mydata['members'][0]['powers'][0]);//이럼 나옴
+      document.write(data['members'][0]['powers'][0]);//이래도 나오네?
+  </script>
+  </head>
+  <body>
+
+  </body>
+</html> 
