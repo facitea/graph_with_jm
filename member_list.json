@@ -1,0 +1,12 @@
+memberlist = {
+    "member_info" : [
+    {"m_id": "test1", "m_pwd": "1111", "m_bank": "국민은행", "m_nick": "파오리123", "p_nick": null, "m_email": "test1@naver.com", "m_phone": "010-1234-5678", "m_point": "30000", "m_account": "45466-123", "m_regdate": "2022-04-16 16:27:49.000000", "m_isactive": "y", "m_lastlogin": null},
+    {"m_id": "test2", "m_pwd": "2222", "m_bank": "기업은행", "m_nick": "라이츄123", "p_nick": null, "m_email": "test2@naver.com", "m_phone": "010-2002-9867", "m_point": "40000", "m_account": "45446-121", "m_regdate": "2022-04-17 16:27:49.000000", "m_isactive": "y", "m_lastlogin": null},
+    {"m_id": "test3", "m_pwd": "3333", "m_bank": "국민은행", "m_nick": "꼬북이123", "p_nick": null, "m_email": "test3@naver.com", "m_phone": "010-3003-5678", "m_point": "30000", "m_account": "45466-123", "m_regdate": "2022-04-18 16:27:49.000000", "m_isactive": "y", "m_lastlogin": null},
+    {"m_id": "test4", "m_pwd": "4444", "m_bank": "기업은행", "m_nick": "파이리123", "p_nick": null, "m_email": "test4@naver.com", "m_phone": "010-4004-9867", "m_point": "40000", "m_account": "45446-121", "m_regdate": "2022-04-20 16:10:49.000000", "m_isactive": "y", "m_lastlogin": null},
+    {"m_id": "test5", "m_pwd": "5555", "m_bank": "국민은행", "m_nick": "리자몽123", "p_nick": null, "m_email": "test5@naver.com", "m_phone": "010-5005-5678", "m_point": "30000", "m_account": "45466-123", "m_regdate": "2022-04-20 16:48:49.000000", "m_isactive": "y", "m_lastlogin": null},
+    {"m_id": "test6", "m_pwd": "6666", "m_bank": "신한은행", "m_nick": "거북왕123", "p_nick": null, "m_email": "test6@naver.com", "m_phone": "010-6006-9867", "m_point": "40000", "m_account": "110-45446-121", "m_regdate": "2022-04-21 16:27:49.000000", "m_isactive": "y", "m_lastlogin": null},
+    {"m_id": "test7", "m_pwd": "7777", "m_bank": "국민은행", "m_nick": "뮤츠123", "p_nick": null, "m_email": "test7@naver.com", "m_phone": "010-7007-5678", "m_point": "30000", "m_account": "45466-123", "m_regdate": "2022-04-22 16:27:49.000000", "m_isactive": "y", "m_lastlogin": null},
+    {"m_id": "test8", "m_pwd": "8888", "m_bank": "우리은행", "m_nick": "뮤123", "p_nick": null, "m_email": "test8@naver.com", "m_phone": "010-8008-9867", "m_point": "40000", "m_account": "1002-45446-121", "m_regdate": "2022-04-23 16:27:49.000000", "m_isactive": "y", "m_lastlogin": null}
+    ]
+    }
