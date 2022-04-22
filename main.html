@@ -45,6 +45,9 @@ canvas {
 <script src="data.json" type="text/javascript"></script>
 <script src="member_list.json" type="text/javascript"></script>
 <script src="producer_data.json" type="text/javascript"></script>
+<script src="faq.json" type="text/javascript"></script>
+<script src="notice.json" type="text/javascript"></script>
+
 <script>
 function fncPieDonutChart(arrAssData, arrAssColor) {
    var chartInfo = Highcharts.chart('adminPiChart', {
@@ -242,7 +245,7 @@ function fncPieDonutChart(arrAssData, arrAssColor) {
             </tr>
             <tr>
                <td>공지사항</td>
-               <td>0</td>
+               <td><div id="total_notice">0</div></td>
             </tr>
             <tr>
                <td>음원관련문의</td>
@@ -250,7 +253,7 @@ function fncPieDonutChart(arrAssData, arrAssColor) {
             </tr>
             <tr>
                <td>FAQ</td>     
-               <td>0</td>
+               <td><div id="total_faq">0</div></td>
             </tr>
          </table>
       </div>
@@ -303,33 +306,33 @@ function fncPieDonutChart(arrAssData, arrAssColor) {
             </tr>
             <tr></tr>
             <tr>
-               <td>1.[공지] 공지사항입니다.</td>
+               <td><div id="notice_1">공지사항1</div></td>
                <td>                 
-                  06.01
+                  <div id="notice_1_date">공지사항1</div>
                </td>
             </tr>
             <tr>
-               <td>2.[공지] 공지사항 글입니다.</td>
+               <td><div id="notice_2">공지사항2</div></td>
                <td>              
-                  06.01
+                  <div id="notice_2_date">공지사항2</div>
                </td>
             </tr>
             <tr>
-               <td>3.[공지] 공지사항 글입니다.</td>
+               <td><div id="notice_3">공지사항3</div></td>
                <td>                 
-                  06.01
+                  <div id="notice_3_date">공지사항3</div>
                </td>
             </tr>
             <tr>
-               <td>4.[공지] 저작권 관련 문의입니다.</td>
+               <td><div id="notice_4">공지사항4</div></td>
                <td>                 
-                  06.01
+                  <div id="notice_4_date">공지사항4</div>
                </td>
             </tr>
             <tr>
-               <td>5.[공지] 저작권 관련 문의입니다.</td>
+               <td><div id="notice_5">공지사항5</div></td>
                <td>                 
-                  06.01
+                  <div id="notice_5_date">공지사항5</div>
                </td>
             </tr>              
          </table>

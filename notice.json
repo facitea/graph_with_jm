@@ -1,0 +1,44 @@
+notice = {
+    "notice_list" : [
+    {
+    "a_idx": 1,
+    "bl_idx": 1,
+    "bl_date": "2022-04-20 00:00:00.000000",
+    "bl_read": 0,
+    "bl_title": "문의 드립니다. - 1",
+    "bl_context": "1공지사항 테스트중입니다.",
+    "bl_isnotice": "y"
+    },{
+    "a_idx": 1,
+    "bl_idx": 2,
+    "bl_date": "2022-04-20 00:00:00.000000",
+    "bl_read": 0,
+    "bl_title": "문의 드립니다. - 2",
+    "bl_context": "2공지사항 테스트중입니다.",
+    "bl_isnotice": "y"
+    },{
+    "a_idx": 1,
+    "bl_idx": 3,
+    "bl_date": "2022-04-20 00:00:00.000000",
+    "bl_read": 0,
+    "bl_title": "문의 드립니다. - 3",
+    "bl_context": "3공지사항 테스트중입니다.",
+    "bl_isnotice": "y"
+    },{
+    "a_idx": 1,
+    "bl_idx": 4,
+    "bl_date": "2022-04-20 00:00:00.000000",
+    "bl_read": 0,
+    "bl_title": "문의 드립니다. - 4",
+    "bl_context": "4공지사항 테스트중입니다.",
+    "bl_isnotice": "y"
+    },{
+    "a_idx": 1,
+    "bl_idx": 5,
+    "bl_date": "2022-04-20 00:00:00.000000",
+    "bl_read": 0,
+    "bl_title": "문의 드립니다. - 5",
+    "bl_context": "5공지사항 테스트중입니다.",
+    "bl_isnotice": "y"
+    }]
+    }
