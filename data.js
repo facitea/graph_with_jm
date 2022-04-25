@@ -39,15 +39,12 @@ window.onload = function(){
         notice_title_arr.push(notice_list['notice_list'][i]["bl_title"]);
     } // key, value 한쌍 값 동적으로 넣는 방법을 몰라서 그냥 따로 따로 추출해서 넣어주기로..
     
-    /*for(let j=0; j<5; j++){
-        notice_title_arr.push(notice_list['notice_list'][j]["bl_context"]);
-    }
-    */
     let notice_date_arr = new Array;
     for (let i=0; i<5; i++){
-        notice_date_arr.push(notice_list['notice_list'][i]["bl_date"]);
+        notice_date_arr.push(notice_list['notice_list'][i]["bl_date"].substr(0, 10));
     }
-    //%%%%%%%%%%%%%%%%%%%%%%%%날짜 잘라서 넣어야함.
+    // 공지사항 날짜
+
     
     let faq_list = JSON.parse(JSON.stringify(faq));
     let total_faq = faq_list["faq_list"].length;    //FAQ 개수
@@ -64,4 +61,9 @@ window.onload = function(){
     document.getElementById("notice_3").innerText = notice_title_arr[2];
     document.getElementById("notice_4").innerText = notice_title_arr[3];
     document.getElementById("notice_5").innerText = notice_title_arr[4];
+    document.getElementById("notice_1_date").innerText = notice_date_arr[0];
+    document.getElementById("notice_2_date").innerText = notice_date_arr[1];
+    document.getElementById("notice_3_date").innerText = notice_date_arr[2];
+    document.getElementById("notice_4_date").innerText = notice_date_arr[3];
+    document.getElementById("notice_5_date").innerText = notice_date_arr[4];
 }
