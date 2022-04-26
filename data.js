@@ -1,7 +1,4 @@
 window.onload = function(){
-    let mydata = JSON.parse(JSON.stringify(data));
-    let content = mydata['members'][0]['powers'][0];
-
     const today = new Date();
     const year = today.getFullYear();
     const month = ('0' + (today.getMonth() + 1)).slice(-2);
@@ -19,14 +16,29 @@ window.onload = function(){
         member_signup_date.push(member_list["member_info"][a]["m_regdate"]);
     }
 
-    let seararr = new RegExp(dateString);//, 'g'
-    let resarr = new Array;
+    let todaysdate = new RegExp(dateString);//, 'g'
+    let today_member_date = new Array;
         for (let i=0; i<total_members; i++){
-            if (seararr.test(member_signup_date[i]) == true){
-                resarr.push(member_signup_date[i]);
+            if (todaysdate.test(member_signup_date[i]) == true){
+                today_member_date.push(member_signup_date[i]);
             }
         }
-    let today_total_signup = resarr.length; // 오늘의 가입자
+    let today_total_signup = today_member_date.length; // 오늘의 가입자
+
+    let beat_list = JSON.parse(JSON.stringify(beatinfo));
+    let total_beat = beat_list["beat_info"].length; //비트 수
+
+    let beat_date = new Array;
+    for(let a=0; a<total_beat; a++){
+        beat_date.push(beat_list["beat_info"][a]["bt_regdate"]);
+    }
+    let today_beat_date = new Array;
+        for (let i=0; i<total_beat; i++){
+            if (todaysdate.test(beat_date[i]) == true){
+                today_beat_date.push(beat_date[i]);
+            }
+        }
+    let today_total_beat = today_beat_date.length; //오늘의 비트 수
     
     let producer_list = JSON.parse(JSON.stringify(producerdata));
     let total_producer = producer_list["producer_info"].length; //프로듀서 수
@@ -49,8 +61,8 @@ window.onload = function(){
     let faq_list = JSON.parse(JSON.stringify(faq));
     let total_faq = faq_list["faq_list"].length;    //FAQ 개수
 
-    document.getElementById("total_beat").innerText = "total";
-    document.getElementById("today_beat").innerText = "today";
+    document.getElementById("total_beat").innerText = total_beat;
+    document.getElementById("today_beat").innerText = today_total_beat;
     document.getElementById("today_member").innerText = today_total_signup;
     document.getElementById("total_member").innerText = total_members;
     document.getElementById("total_producer").innerText = total_producer;
